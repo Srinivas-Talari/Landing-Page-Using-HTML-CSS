@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+
+    background-color: lightcyan;
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+
+    display: flex;
+    list-style-type: none;
+    /* justify-content: space-evenl; */
+
+}
+
+li {
+
+    margin-left: 100px;
+    font-family: 'poppins';
+    cursor: pointer;
+}
+
+a {
+
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.left {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+#main-heading {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'poppins';
+}
+
+#btn {
+
+    color: white;
+    background-color: darkslateblue;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: 'poppins';
+    font-size: 16px;
+
+}
+
+#btn:hover {
+
+    background-color: white;
+    color: darkslateblue;
+    cursor: pointer;
+}
+
+img {
+
+    width: 600px;
+    height: 600px;
+}
+
+/* Responsive [Media Quieries] */
+
+@media screen and (max-width:600px) {
+
+    nav {
+
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    ul {
+
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    li {
+
+        margin-left: -10px;
+    }
+
+    main {
+
+        flex-direction: column-reverse;
+    }
+
+    img {
+
+        width: 300px;
+        height: 300px;
+    }
+
+    h2 {
+
+        margin-left: 22px;
+    }
+}

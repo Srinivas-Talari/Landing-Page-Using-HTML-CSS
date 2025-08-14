@@ -2,7 +2,8 @@
 
 body {
 
-    background-color: lightcyan;
+    background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+
 }
 
 nav {
@@ -10,6 +11,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    backdrop-filter: blur(8px)
 }
 
 h2 {
@@ -37,6 +39,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     font-weight: 600;
+    color :brown
 }
 
 .left {
@@ -57,36 +60,51 @@ main {
 
 #main-heading {
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #333;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
+
 }
 
 p {
     font-family: 'poppins';
+    line-height: 36px;
+    width: 50vw;
 }
 
 #btn {
 
-    color: white;
-    background-color: darkslateblue;
-    border-radius: 30px;
-    padding: 10px;
-    font-family: 'poppins';
-    font-size: 16px;
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
 
 }
 
 #btn:hover {
 
-    background-color: white;
-    color: darkslateblue;
-    cursor: pointer;
+  transform: translateY(-3px) scale(1.05);
+  background: linear-gradient(135deg, #8e24aa, #6a1b9a);
+  box-shadow: 0px 8px 20px rgba(138, 43, 226, 0.4);
+
 }
 
 img {
 
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 15px 20px 60px black ;
+    border-radius: 10px;
 }
 
 /* Responsive [Media Quieries] */
